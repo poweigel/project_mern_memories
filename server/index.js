@@ -16,7 +16,7 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
-const CONNECTION_URL = 'mongodb://root:123123@poweigel-mongo-production/admin?authSource=admin&w=1';
+const CONNECTION_URL = 'mongodb://root:123123@poweigel-memories-mongo-production/admin?authSource=admin&w=1';
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
