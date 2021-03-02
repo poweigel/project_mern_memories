@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+const API = axios.create({ baseURL: 'https://poweigel-memories-backend.zeet.app/' });
 
 // Send token back to backend so backend middleware can verify we can actually log in.
 API.interceptors.request.use((req) => {
