@@ -8,7 +8,7 @@ API.interceptors.request.use((req) => {
     req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`;  // Get the token from that specific profile, and add it to each and every request.
   }
   return req;
-});
+})
 
 export const fetchPosts = () => API.get('/posts');
 export const createPost = (newPost) => API.post('/posts', newPost);
